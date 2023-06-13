@@ -17,7 +17,7 @@ const Header = () => {
           <ul className="nav col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
             <li>
               {/* NavLink는 a태그로 변환, isActive가 있어서 css 포커스 적용 */}
-              {/* isActive는 URL을 비교해서 Routes의 path 경로와 같으면 isActive가 true */}
+              {/* isActive는 URL을 비교해서 Routes의 path 경로와 같으면 isActive가 tr */}
               <NavLink
                 to="/"
                 className={({ isActive }) => {

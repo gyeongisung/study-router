@@ -3,22 +3,21 @@ import { useEffect, useState } from "react";
 import { useSearchParams, useLocation, useNavigate } from "react-router-dom";
 
 const About = ({ title }) => {
-  // 웹브라우저의 라우터를 변경하려면 useNavigate() 를 활용
+  // 웹브라우저의 라우터를를 강제로 변경하려면 useNavigate() 를 활용
   const navigate = useNavigate();
+
   // useSearchParams : ?a=1&b=2 쿼리문자열 활용하기
   // useLocation : ?a=1&b=2#gogo 쿼리문자열 활용하기
   const location = useLocation();
-  // console.log("주소창 객체", location.state);
   // console.log("주소창 객체", location.pathname);
   // console.log("주소창 객체", location.search);
   // console.log("주소창 객체", location.hash);
 
   // useLocation()  === window.location 객체와 같다.
-  // useSearchParams() 를 이용해 수월하게 쿼리를 추출할 수 있다.
+  // useSearchParams() 를 이용한 수월하게 쿼리를 추출할 수 있다.
   const [searchParams, setSearchParams] = useSearchParams();
   // console.log(searchParams.get("page"));
   // console.log(searchParams.get("total"));
-
   // 현재 페이지
   const [page, setPage] = useState(1);
 
@@ -46,8 +45,8 @@ const About = ({ title }) => {
   };
   // const goNaver = () => {
   // 윈도우 강제로 이동하기
-  // window.location = "http://www.naver.com";
   // window.open("http://www.naver.com");
+  // window.location = "http://www.naver.com";
   // 아래처럼 전달하면 path 와 함께 붙는다.
   // navigate("http://www.naver.com");
   // };
@@ -55,7 +54,7 @@ const About = ({ title }) => {
   // const goHome = () => {
   // navigate 를 이용해서 정보를 전달하고 싶다.
   // state 옵션에 객체를 정의해서 전달해 준다.
-  // navigate("/", { state: { from: "/About", age: 20 } });
+  // navigate("/", { state: { from: "/About", age: 888 } });
   // };
 
   return (

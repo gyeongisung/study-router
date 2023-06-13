@@ -20,13 +20,13 @@ const Members = ({ members }) => {
   const goHome = () => {
     // navigate 를 이용해서 정보를 전달하고 싶다.
     // state 옵션에 객체를 정의해서 전달해 준다.
-    // navigate("/", { state: { from: "/Members", age: 30 } });
+    // navigate("/", { state: { from: "/Members", age: 555 } });
     navigate("/");
   };
 
-  // location의 state 활용하기
+  // location 의 state 활용하기
   // const showInfo = (_who, _img) => {
-  //   navigate("/about", { state: { singer: _who, photo: _img } });
+  //     navigate("/about", { state: { singer: _who, photo: _img } });
   // };
 
   const path = process.env.PUBLIC_URL;

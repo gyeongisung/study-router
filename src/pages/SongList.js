@@ -6,7 +6,7 @@ const SongList = ({ songs }) => {
     // return 은 JSX로 html 만들려고 함
     return (
       <li className="list-group-item" key={item.id}>
-        <Link to={`/songlist/${item.id}`} style={{ textDecoration: "none" }}>
+        <Link to={`/songs/${item.id}`} style={{ textDecoration: "none" }}>
           {item.title}
           {item.musician}
           {/* font-awsome */}
